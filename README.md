@@ -2,31 +2,31 @@
 
 GymPass style app.
 
-## RFs (Requisitos funcionais)
+## Functional Requirements
 
-- [x] Deve ser possível se cadastrar;
-- [x] Deve ser possível se autenticar;
-- [x] Deve ser possível obter o perfil de um usuário logado;
-- [x] Deve ser possível obter um número de check-ins realizados pelo usuário logado;
-- [x] Deve ser possível o usuário obter seu histórico de check-ins;
-- [x] Deve ser possível o usuário buscar academias próximas;
-- [x] Deve ser possível o usuário buscar academias pelo nome;
-- [x] Deve ser possível o usuário realizar check-in em uma academia;
-- [x] Deve ser possível validar o check-in de um usuário;
-- [x] Deve ser possível cadastrar uma academia;
+- [x] It should be able to register;
+- [x] It should be able to authenticate;
+- [x] It should be able to get the profile from logged user;
+- [x] It should be able to get the number of check-ins for an logged user;
+- [x] It should be able to get the history of check-ins;
+- [x] It should be able to find nearby gyms;
+- [x] It should be able to find gyms by name;
+- [x] It should be able to check-in on gym;
+- [x] It should be able to validate a check-in from user;
+- [x] It should be able to register a gym;
 
-## RNs (Regras de negócio)
+## Business Rules
 
-- [x] O usuário não deve poder se cadastrar com um e-mail duplicado;
-- [x] O usuário não pode fazer 2 check-ins no mesmo dia;
-- [x] O usuário não pode fazer check-in se não estiver perto (100m) da academia;
-- [x] O check-in só pode ser validado até 20 minutos após criado;
-- [x] O check-in só pode ser validado por administradores;
-- [x] A academia só pode ser cadastrada por administradores;
+- [x] It should not be able to user register with same email;
+- [x] It should not be able to do two or more check-ins in the same day;
+- [x] It should not be able to check in on distant gym;
+- [x] It should not be able to validate the check-in after 20 minutes of its creation
+- [x] It should be able to validate check-in if you're an admin;
+- [x] It should be able to register a gym if you're an admin;
 
-## RNFs (Requisitos não-funcionais)
+## Non-functional Requirements
 
-- [x] A senha do usuário precisa estar criptografada;
-- [x] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL;
-- [x] Todas as listas de dados precisam estar paginadas com 20 itens por página;
-- [x] O usuário deve ser identificado por um JWT (Json Web Token);
+- [x] The user's password must be encrypted;
+- [x] The application data must be persisted in a PostgreSQL database;
+- [x] All data lists must be paginated with 20 items per page;
+- [x] The user must be identified by a JWT (Json Web Token);
